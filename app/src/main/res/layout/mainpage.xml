@@ -1,0 +1,398 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hi, Abhi"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    >
+
+                    <!--                    <ImageButton-->
+                    <!--                        android:id="@+id/notification"-->
+                    <!--                        android:layout_width="40dp"-->
+                    <!--                        android:layout_height="40dp"-->
+                    <!--                        android:background="@null"-->
+                    <!--                        android:scaleType="fitCenter"-->
+                    <!--                        android:src="@drawable/notification"-->
+                    <!--                        tools:ignore="MissingConstraints"/>-->
+
+                    <ImageButton
+                        android:id="@+id/user"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/user"
+                        tools:ignore="MissingConstraints"
+                        android:paddingLeft="10dp"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignTop="@+id/linearlayout"
+                    android:background="#96000000"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctors"
+                    android:layout_alignTop="@+id/linearlayout"
+                    android:textSize="16dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/linearlayout"
+                    android:layout_marginTop="70dp"
+                    android:scrollbars="none"
+                    android:scrollbarSize="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        >
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Neurology"
+                            android:backgroundTint="#C9F95F"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Immunology"
+                            android:backgroundTint="#C9F95F"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dermatology"
+                            android:backgroundTint="#C9F95F"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cardiologist"
+                            android:backgroundTint="#C9F95F"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Psychiatrist"
+                            android:backgroundTint="#C9F95F"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Insights"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/mainComponent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="1"
+                    android:padding="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/stepsLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_corner_for_steps"
+                        android:layout_marginRight="5dp"
+
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/stepscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="left"
+                            android:text="Steps Taken"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="700 steps"
+                            android:textSize="20dp"
+                            android:textColor="#FA0808"
+                            android:textStyle="bold"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/stepscount"
+                            android:scaleType="fitCenter"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hydrationlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/rounded_corner_for_hydration_level"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/hydrationLevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:gravity="center"
+                            android:text="Hydration Level"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="900ml"
+                            android:textSize="20dp"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/waterlevel"
+                            android:scaleType="fitCenter"
+                            />
+                    </LinearLayout>
+
+
+                </GridLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Follow Up"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/daysofweekscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linearlayout"
+                android:scrollbars="none"
+                android:scrollbarSize="5dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/daysofweeks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17\nMON"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/taskmissed"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18\nTUE"
+                        android:background="@drawable/taskdone"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19\nWED"
+                        android:background="@drawable/taskdone"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20\nTHU"
+                        android:background="@drawable/taskdone"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21\nFRI"
+                        android:background="@drawable/taskdone"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22\nSAT"
+                        android:background="@drawable/todaytask"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23\nSUN"
+                        android:background="@drawable/taskpending"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FrameLayout for Bottom Navigation to add BlurView -->
+    <FrameLayout
+        android:id="@+id/bottomNavigationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- BlurView for Blur Effect -->
+
+        <!--Any child View here, TabLayout for example. This View will NOT be blurred -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/rounded_corner_with_border"
+            app:menu="@menu/bottom_nav_menu"/>
+
+        <!-- Bottom Navigation View -->
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
