@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
 
         // Navigate to the next activity after successful login
-        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        Intent intent = new Intent(LoginActivity.this, MainPage.class);
         startActivity(intent);
         finish();
     }
