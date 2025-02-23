@@ -16,17 +16,46 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".CareGiverSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".CareGiverLogin"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLogin"
+            android:exported="false" />
+        <activity
+            android:name=".CareGiverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment"
+            android:exported="false" />
+        <activity
             android:name=".DoctorDetails"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DoctorList"
-            android:exported="false" />
-        <activity
-            android:name=".Home"
-            android:exported="false" />
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".DoctorList" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Home" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".UserProfile"
             android:exported="false" />
@@ -38,7 +67,13 @@
             android:exported="false" />
         <activity android:name=".MainPage" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
+            android:name=".PatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

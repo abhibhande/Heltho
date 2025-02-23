@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,20 +15,16 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.example.myapplication.VolleyRequest;
-public class LoginActivity extends AppCompatActivity {
 
+public class DoctorLogin extends AppCompatActivity {
     private TextInputLayout emailLayout, passwordLayout;
     private TextInputEditText user, pass;
     private MaterialButton loginButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
-
-        // Initialize Views
+        setContentView(R.layout.activity_doctor_login);
         emailLayout = findViewById(R.id.email);
         passwordLayout = findViewById(R.id.password);
         user = findViewById(R.id.user);
@@ -101,21 +96,11 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        if(VolleyRequest.loginUser(this,email,password)) {
-            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginActivity.this, MainPage.class);
-            startActivity(intent);
-            finish();
-        }
-        else {
-            Toast.makeText(this, " Incorrect Email or password", Toast.LENGTH_SHORT).show();
-        }
-
         // Here you can add authentication logic (e.g., check credentials from database)
         Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
 
         // Navigate to the next activity after successful login
-        Intent intent = new Intent(LoginActivity.this, PatientActivity.class);
+        Intent intent = new Intent(this, PatientActivity.class);
         startActivity(intent);
         finish();
     }

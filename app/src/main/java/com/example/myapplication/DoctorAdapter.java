@@ -44,7 +44,7 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.ViewHolder
                 .into(holder.image);
 
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(context, UserProfile.class);
+            Intent intent = new Intent(context, DoctorDetails.class);
             intent.putExtra("doctor", doctor);
             context.startActivity(intent);
         });
