@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lufgasemibold"
-        android:text="Login Here to Connect With Us..."
+        android:text="Hello Doctor..."
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +80,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="signin"
+        android:fontFamily="@font/lufgasemibold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="New User,Then Go here"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="653dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

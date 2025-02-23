@@ -35,7 +35,7 @@ public class FirstPage extends AppCompatActivity {
     }
 
     public void doctor(View view) {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, DoctorLogin.class);
         startActivity(i);
     }
 }

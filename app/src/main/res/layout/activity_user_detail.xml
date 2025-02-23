@@ -95,7 +95,17 @@
                 android:textSize="14sp"
                 android:textColor="@android:color/darker_gray"
                 android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/calling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="call"
+                android:text="Call Here"
+                android:fontFamily="@font/lufgamedium"
+                android:textSize="15sp"/>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <!-- Prescription Button -->

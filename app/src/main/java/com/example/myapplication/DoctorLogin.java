@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -102,6 +103,12 @@ public class DoctorLogin extends AppCompatActivity {
         // Navigate to the next activity after successful login
         Intent intent = new Intent(this, PatientActivity.class);
         startActivity(intent);
+        finish();
+    }
+
+    public void signin(View view) {
+        Intent i = new Intent(this, DoctorSignUp.class);
+        startActivity(i);
         finish();
     }
 }
