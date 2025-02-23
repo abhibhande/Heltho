@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="when_to_take">When to take?</string>
+    <string name="meal_timing">Meal Timing</string>
+    <string name="before_meal">Before Meal</string>
+    <string name="after_meal">After Meal</string>
+    <string name="save">Save</string>
+    <string name="saving">Saving...</string>
+
+    <string-array name="timing_array">
+        <item>Select timing</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+        <item>Morning and Night</item>
+        <item>Morning, Afternoon and Night</item>
+    </string-array>
 </resources>

@@ -10,13 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class DoctorDetails extends AppCompatActivity {
+public class FirstPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_doctor_details);
+        setContentView(R.layout.activity_first_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -24,8 +24,18 @@ public class DoctorDetails extends AppCompatActivity {
         });
     }
 
-    public void bookAppoint(View view) {
-        Intent i = new Intent(this, Appointment.class);
+    public void login(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void caregiver(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void doctor(View view) {
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 }
