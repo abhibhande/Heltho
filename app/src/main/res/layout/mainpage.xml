@@ -285,7 +285,7 @@
                 />
 
             <HorizontalScrollView
-                android:id="@+id/daysofweekscrollview"
+                android:id="@+id/daysofscrollview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/linearlayout"
@@ -294,74 +294,22 @@
                 >
 
                 <LinearLayout
-                    android:id="@+id/daysofweeks"
+                    android:id="@+id/noofdays"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="16dp"
                     >
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/day0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="17\nMON"
+                        android:text="Day\0"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/taskmissed"
                         android:textColor="@color/black"
                         />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="18\nTUE"
-                        android:background="@drawable/taskdone"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@color/black"
-                        />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="19\nWED"
-                        android:background="@drawable/taskdone"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@color/black"
-                        />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20\nTHU"
-                        android:background="@drawable/taskdone"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@color/black"
-                        />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="21\nFRI"
-                        android:background="@drawable/taskdone"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@color/black"
-                        />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="22\nSAT"
-                        android:background="@drawable/taskdone"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@color/black"
-                        />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="23\nSUN"
-                        android:background="@drawable/todaytask"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@color/black"
-                        />
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -375,6 +323,7 @@
                 />
 
             <LinearLayout
+                android:id="@+id/medicinelist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -386,43 +335,8 @@
                     android:layout_height="wrap_content"
                     android:text="Paracetamol" />
 
-                <CheckBox
-                    android:id="@+id/myCheckBox2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-                <CheckBox
-                    android:id="@+id/myCheckBox3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-                <CheckBox
-                    android:id="@+id/myCheckBox4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-                <CheckBox
-                    android:id="@+id/myCheckBox5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-                <CheckBox
-                    android:id="@+id/myCheckBox6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-                <CheckBox
-                    android:id="@+id/myCheckBox7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-                <CheckBox
-                    android:id="@+id/myCheckBox8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Paracetamol" />
-
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Done"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Done"
