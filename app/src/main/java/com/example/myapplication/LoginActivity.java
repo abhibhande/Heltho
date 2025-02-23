@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-
+import com.example.myapplication.VolleyRequest;
 public class LoginActivity extends AppCompatActivity {
 
     private TextInputLayout emailLayout, passwordLayout;
@@ -101,12 +101,15 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        // Here you can add authentication logic (e.g., check credentials from database)
-        Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+        if(VolleyRequest.loginUser(this,email,password)) {
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, MainPage.class);
+            startActivity(intent);
+            finish();
+        }
+        else {
+            Toast.makeText(this, " Incorrect Email or password", Toast.LENGTH_SHORT).show();
+        }
 
-        // Navigate to the next activity after successful login
-        Intent intent = new Intent(LoginActivity.this, MainPage.class);
-        startActivity(intent);
-        finish();
     }
 }
