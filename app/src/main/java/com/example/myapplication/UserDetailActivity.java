@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -45,5 +46,11 @@ public class UserDetailActivity extends AppCompatActivity {
             prescriptionIntent.putExtra("bloodGroup", txtBloodGroup.getText().toString());
             startActivity(prescriptionIntent);
         });
+    }
+
+    public void call(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:7517717879"));
+        startActivity(intent);
     }
 }

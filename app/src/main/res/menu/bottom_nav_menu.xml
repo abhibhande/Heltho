@@ -7,6 +7,7 @@
     <item android:id="@+id/reel"
         android:icon="@drawable/video"
         android:title=""
+        android:onClick="ReelAc"
         />
 
     <item android:id="@+id/plans"
