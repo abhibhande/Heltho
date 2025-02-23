@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static com.example.myapplication.VolleyRequest.getDailyFollowUp;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -56,6 +58,8 @@ public class MainPage extends AppCompatActivity implements SensorEventListener {
         TextView name=findViewById(R.id.name);
         stepCountTextView = findViewById(R.id.stepscount);
         LinearLayout specializationLayout = findViewById(R.id.doctorSpecialization);
+        LinearLayout noofdays = findViewById(R.id.noofdays);
+        LinearLayout medicinelist = findViewById(R.id.medicinelist);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -63,14 +67,8 @@ public class MainPage extends AppCompatActivity implements SensorEventListener {
 
         Vector<String> specializations = VolleyRequest.getDoctorCategory(this,specializationLayout);
 
-//        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACTIVITY_RECOGNITION)
-//                != PackageManager.PERMISSION_GRANTED) {
-//            ActivityCompat.requestPermissions(this,
-//                    new String[]{android.Manifest.permission.ACTIVITY_RECOGNITION},
-//                    ACTIVITY_RECOGNITION_REQUEST_CODE);
-//        } else {
-//            initializeStepCounter();
-//        }
+
+        getDailyFollowUp(this,String.valueOf(sharedPreferences.getLong("id",1555)),noofdays,medicinelist);
 
 
     }
