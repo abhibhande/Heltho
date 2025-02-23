@@ -84,6 +84,9 @@
                     android:background="#96000000"
                     android:layout_marginTop="55dp"
                     android:layout_marginBottom="10dp"/>
+
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -105,12 +108,14 @@
                     >
 
                     <LinearLayout
+                        android:id="@+id/doctorSpecialization"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="16dp"
                         >
                         <Button
+                            android:id="@+id/doctorSpecialization1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Neurology"
@@ -119,41 +124,41 @@
                             android:textColor="@color/black"
                             />
 
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Immunology"
-                            android:backgroundTint="#C9F95F"
-                            android:layout_marginEnd="10dp"
-                            android:textColor="@color/black"
-                            />
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Immunology"-->
+<!--                            android:backgroundTint="#C9F95F"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            />-->
 
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Dermatology"
-                            android:backgroundTint="#C9F95F"
-                            android:layout_marginEnd="10dp"
-                            android:textColor="@color/black"
-                            />
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Dermatology"-->
+<!--                            android:backgroundTint="#C9F95F"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            />-->
 
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Cardiologist"
-                            android:backgroundTint="#C9F95F"
-                            android:layout_marginEnd="10dp"
-                            android:textColor="@color/black"
-                            />
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Cardiologist"-->
+<!--                            android:backgroundTint="#C9F95F"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            />-->
 
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Psychiatrist"
-                            android:backgroundTint="#C9F95F"
-                            android:layout_marginEnd="10dp"
-                            android:textColor="@color/black"
-                            />
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Psychiatrist"-->
+<!--                            android:backgroundTint="#C9F95F"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            />-->
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -161,6 +166,13 @@
 
 
             </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/changePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -337,7 +349,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="22\nSAT"
-                        android:background="@drawable/todaytask"
+                        android:background="@drawable/taskdone"
                         android:layout_marginEnd="10dp"
                         android:textColor="@color/black"
                         />
@@ -346,7 +358,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="23\nSUN"
-                        android:background="@drawable/taskpending"
+                        android:background="@drawable/todaytask"
                         android:layout_marginEnd="10dp"
                         android:textColor="@color/black"
                         />
@@ -420,6 +432,8 @@
                     android:layout_gravity="center"
                     />
             </LinearLayout>
+
+        </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
